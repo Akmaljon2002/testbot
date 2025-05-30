@@ -10,9 +10,9 @@ PG_DB_HOST = "localhost"
 PG_DB_PORT = 5432
 PG_DB_NAME = "test3db"
 
-# SQLALCHEMY_DATABASE_URL = "sqlite:///./sql.db"
+SQLALCHEMY_DATABASE_URL = "sqlite:///./sql.db"
 # SQLALCHEMY_DATABASE_URL = 'mysql+pymysql://root:@localhost:3306/botdb'
-SQLALCHEMY_DATABASE_URL = f'postgresql+psycopg2://{PG_DB_USER}:{PG_DB_PASS}@{PG_DB_HOST}:{PG_DB_PORT}/{PG_DB_NAME}'
+# SQLALCHEMY_DATABASE_URL = f'postgresql+psycopg2://{PG_DB_USER}:{PG_DB_PASS}@{PG_DB_HOST}:{PG_DB_PORT}/{PG_DB_NAME}'
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL, echo=True)
 
