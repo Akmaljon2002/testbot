@@ -81,6 +81,8 @@ async def izohlar_func(message: Message):
         for izoh in izohlar:
             await message.answer(f"{izoh.text}")
 
+# bu kod github ozgarishi uchun yozildi
+
 async def main():
     await dp.start_polling(bot)
 
